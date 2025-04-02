@@ -1,0 +1,176 @@
+@keyframes appear-animation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home {
+  background-color: var(--dark-3);
+  display: flex;
+  height: auto;
+  color: #fafafa;
+}
+
+.home-content {
+  background-image: url("/public/assets/images/hero-background.png");
+  background-size: cover;
+  background-position: center right;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transform: translateY(20px);
+  animation: appear-animation 1.5s ease-out forwards;
+  padding: 20px;
+}
+
+.home-title {
+  font-size: 3em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home-description {
+  font-size: 1.5em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.home-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.event-button {
+  padding: 10px 20px;
+  background-color: var(--dark-4);
+  color: #fafafa;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.event-button-text {
+  font-size: 1.3em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+.event-button:hover {
+  background-color: var(--dark-2);
+  transform: scale(1.1);
+}
+
+.learn-button {
+  padding: 10px 20px;
+  background-color: blueviolet;
+  color: #fafafa;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.learn-button-text {
+  font-size: 1.3em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+.learn-button:hover {
+  background-color: mediumslateblue;
+  transform: scale(1.1);
+}
+
+.home-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.event-button,
+.learn-button {
+  width: auto;
+  padding: 10px 20px;
+}
+
+/* Media Queries */
+
+/* Large screens (desktops, 992px and below) */
+@media (max-width: 992px) {
+  .home-content {
+    height: auto;
+  }
+
+  .home-title {
+    font-size: 2.5em;
+  }
+
+  .home-description {
+    font-size: 1.3em;
+  }
+}
+
+/* Medium screens (tablets, 768px and below) */
+@media (max-width: 768px) {
+  .home-content {
+    height: auto;
+    padding: 30px 15px;
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .event-button,
+  .learn-button {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .event-button-text,
+  .learn-button-text {
+    font-size: 1.1em;
+  }
+}
+
+/* Small screens (phones, 576px and below) */
+@media (max-width: 576px) {
+  .home-content {
+    height: auto;
+    padding: 15px;
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+  }
+
+  .home-title {
+    font-size: 2em;
+  }
+
+  .home-description {
+    font-size: 1.2em;
+  }
+
+  .home-buttons {
+    gap: 10px;
+  }
+}
