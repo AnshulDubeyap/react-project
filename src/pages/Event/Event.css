@@ -16,7 +16,7 @@
 .event-container {
   padding: 40px 20px;
   background-color: var(--dark-2);
-  background-image: url("/public/assets/images/hero-background.png");
+  background-image: url("/assets/images/hero-background.png");
   transform: translateX(20px);
   animation: appear-animation-2 1.5s ease-out forwards;
   background-size: cover;

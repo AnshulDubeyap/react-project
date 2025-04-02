@@ -17,7 +17,7 @@
 }
 
 .home-content {
-  background-image: url("/public/assets/images/hero-background.png");
+  background-image: url("/assets/images/hero-background.png");
   background-size: cover;
   background-position: center right;
   height: 500px;

@@ -15,11 +15,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="logo-container">
         <Link to="/" className="link logo-container">
-          <img
-            src="/public/assets/icons/list.png"
-            alt="Logo"
-            className="logo"
-          />
+          <img src="/assets/icons/list.png" alt="Logo" className="logo" />
           <h1 className="logo-text">EventSphere</h1>
         </Link>
       </div>
@@ -38,14 +34,14 @@ const Navbar = () => {
       <div className="user-container">
         <img
           className="user-icon"
-          src="/public/assets/images/user_icon.png"
+          src="/assets/images/user_icon.png"
           alt="User Profile"
         />
       </div>
       <div className="menu-button" onClick={handleMenuClick}>
         <img
           className="menu-icon"
-          src="/public/assets/icons/hamburger.svg"
+          src="/assets/icons/hamburger.svg"
           alt="Menu"
         />
       </div>
